@@ -12,30 +12,6 @@ The goal of this project is to investigate the differences between a base langua
 
 For a detailed explanation of the research methodology, please see the [Methodology](METHODOLOGY.md) document.
 
-## Repository Structure
-
-```
-sae_diploma/
-├── src/                     # Source code
-│   ├── models/              # Model implementations
-│   │   └── sae.py           # Sparse Autoencoder implementation
-│   ├── data_processing/     # Data preprocessing utilities
-│   │   └── extract_activations.py  # Script to extract model activations
-│   ├── training/            # Training scripts
-│   │   ├── run_sft.py       # Script for Supervised Fine-Tuning
-│   │   └── train_sae.py     # Script for training SAE models
-│   ├── analysis/            # Analysis tools
-│   │   └── compare_models.py  # Script for model comparison
-│   └── utils/               # Utility functions
-│       └── activation_utils.py  # Utilities for handling activations
-├── notebooks/               # Jupyter notebooks for experiments
-├── data/                    # Data directory (created on demand)
-├── models/                  # Saved model checkpoints (created on demand)
-├── figures/                 # Visualizations and diagrams
-├── requirements.txt         # Project dependencies
-├── METHODOLOGY.md           # Detailed research methodology
-└── README.md                # Project documentation
-```
 
 ## Installation
 
@@ -121,23 +97,6 @@ Detailed experiments and analysis can be found in the notebooks directory:
 - `04_model_comparison.ipynb` - Comparing the internal representations
 - `05_feature_visualization.ipynb` - Visualizing learned features
 
-## Model Architecture
-
-The Sparse Autoencoder (SAE) consists of:
-
-- **Encoder**: Linear projection from input dimension to SAE features
-- **Activation**: ReLU or TopK activation for sparsity
-- **Decoder**: Linear projection back to input dimension
-
-The architecture is designed to learn a sparse, over-complete representation of neural network activations.
-
-## Results
-
-The analysis shows how the internal representations of language models change after fine-tuning. Key findings include:
-
-- Different activation patterns between base and fine-tuned models
-- New features emerging in the fine-tuned model
-- Specific neurons that change their behavior after fine-tuning
 
 ## License
 
