@@ -10,8 +10,6 @@ The goal of this project is to investigate the differences between a base langua
 2. Using Sparse Autoencoders (SAE) to inspect and analyze the internal weights
 3. Comparing the internal representations between the original and fine-tuned models
 
-For a detailed explanation of the research methodology, please see the [Methodology](METHODOLOGY.md) document.
-
 
 ## Installation
 
